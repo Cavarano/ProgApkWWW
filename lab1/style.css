@@ -1,5 +1,26 @@
 body {
-	font-family: Georgia;
-	background-color: #616473;
+	font-family: Georgia, serif;
+	background-image: url('images/background.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	text-align: center;
 }
+
+menu {
+	padding-inline-start: 0;
+}
+
+table {
+	background-color: rgba(219, 242, 250, 0.61);
+	color: #513c04;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+a {
+	color: #1b3668;
+}
+
