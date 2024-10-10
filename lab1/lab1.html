@@ -1,5 +1,6 @@
-<!-- https://enzomind.com/files/uwm/wyklady/ProjAppWeb/lab1.pdf -->
+<!-- https://enzomind.com/files/uwm/wyklady/ProjAppWeb/lab1.pdf  Version 1.1-->
 <head>
+	<script src="kolorujtlo.js" type="text/javascript"></script>
 <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
 <meta http-equiv="Content-Language" content="pl" />
 <meta name="Author" content="Maciej Kała" />
@@ -21,11 +22,42 @@
 	<li><u><a href="lab1_shanghaitower.html">Shanghai Tower</a></u></li>
 	<li><u><a href="lab1_abradzalbajt.html">Abradż al-Bajt</a></u></li>
 	<li><u><a href="lab1_pinganfinancecenter.html">Ping An Finance Center</a></u></li>
+	<li><u><a href="poligon.html">Testuj Poligon</a></u></li>
 		</menu>
 		</td>
 	</tr>
 	<tr><td><img src="images/budynki.png" alt="porównanie wielkości budynków" style="height: 400px; width: auto"></td></tr>
-	<tr><td><i>Skontaktuj się ze mną!</i></td></tr>
+	<tr> <td>
+
+		<h2>Przelicznik wysokości</h2>
+
+<form name="converter">
+    <label>Enter Amount:</label>
+    <input type="text" name="input" value="0" oninput="convert(this.form, this.form.to, this.form.from)">
+    <br><br>
+
+    <label>From:</label>
+    <select name="to">
+		<option value="3.2808399">metry</option>
+        <option value="1">stopy</option>
+    </select>
+
+    <label>To:</label>
+    <select name="from">
+        <option value="1">stopy</option>
+        <option value="3.2808399">metry</option>
+
+    </select>
+    <br><br>
+
+    <label>Converted Amount:</label>
+    <input type="text" name="display" value="0" readonly>
+	<br><br>
+	<input type="button" value="Otwórz konwerter w nowym oknie" onclick="openWindow()">
+    <br><br>
+</form>
+	</td></tr>
+		<tr><td><i>Skontaktuj się ze mną!</i></td></tr>
 	<tr>
 		<td>
 			<div id="footer">
