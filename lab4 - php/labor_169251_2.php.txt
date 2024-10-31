@@ -1,6 +1,0 @@
-<? 
-$nr_indeksu = ‘169251’; 
-$nrGrupy = ‘2’; 
-echo ‘Maciej Kała ‘.$nr_indeksu.’ grupa ‘.$nrGrupy.’ <br /><br />’; 
-echo ‘Zastosowanie metody include() <br />’; 
-?>
