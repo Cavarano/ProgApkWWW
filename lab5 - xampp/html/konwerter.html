@@ -1,0 +1,41 @@
+<!-- https://enzomind.com/files/uwm/wyklady/ProjAppWeb/lab1.pdf -->
+<head>
+	<script src="/js/timedate.js" type="text/javascript"></script>
+	<script src="/js/kolorujtlo.js" type="text/javascript"></script>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Language" content="pl" />
+<meta name="Author" content="Maciej Kała" />
+<title>Konwerter</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<style>
+	body {
+background-image: none;
+}
+</style>
+<body>
+<h2>Przelicznik wysokości</h2>
+<form name="converter">
+    <label>Enter Amount:</label>
+    <input type="text" name="input" value="0" oninput="convert(this.form, this.form.to, this.form.from)">
+    <br><br>
+
+    <label>From:</label>
+    <select name="to">
+		<option value="3.2808399">metry</option>
+        <option value="1">stopy</option>
+    </select>
+
+    <label>To:</label>
+    <select name="from">
+        <option value="1">stopy</option>
+        <option value="3.2808399">metry</option>
+
+    </select>
+    <br><br>
+
+    <label>Converted Amount:</label>
+    <input type="text" name="display" value="0" readonly>
+    <br><br>
+</form>
+</body>
