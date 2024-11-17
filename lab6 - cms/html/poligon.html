@@ -1,0 +1,102 @@
+<h1>Poligon Doświadczalny</h1>
+<div id="zegarek"></div> <br>
+<div id="data"></div> <br><br>
+
+<div id="animacjaTestowa1" class="test-block">Kliknij, a się powiększę</div>
+
+<div id="animacjaTestowa2" class="test-block">Najedź kursorem, a się powiększę</div>
+
+<div id="animacjaTestowa3" class="test-block">Klikaj, abym urósł</div>
+
+<div id="animacjaTestowa4"><img src="images/burdzchalifa.jpg" class="photo" alt="burdz chalifa" style="height: auto; width: 200px; float: right"></div>
+
+<script>
+    $("#animacjaTestowa1").on("click", function(){
+        $(this).animate({
+            width: "500px",
+            opacity: 0.4,
+            fontSize: "3em",
+            borderWidth: "10px"
+        }, 1500);
+    });
+
+    $("#animacjaTestowa2").on("mouseover", function(){
+        $(this).animate({
+            width: 300
+        }, 100);
+    }).on("mouseout", function(){
+        $(this).animate({
+            width: 200
+        }, 100);
+    });
+
+    $("#animacjaTestowa3").on("click", function() {
+        if (!$(this).is(":animated")) {
+            $(this).animate({
+                width: "+=50",
+                height: "+=10",
+                opacity: "+=0.1"
+            }, {
+                duration: 1000
+            });
+        }
+    });
+
+    $(".photo").on("click", function(){
+        $(this).animate({
+            width: 400,
+            height: 800
+        }, 100).height(300).width(400);
+    }).on("mouseout", function(){
+        $(this).animate({
+            width: 200,
+            height: 400
+        }, 100);
+    });
+</script>
+
+<form>
+    <input type="button" value="Zatrzymaj czas!" onclick="stopclock()">
+    <input type="button" value="Otwórz konwerter w nowym oknie" onclick="openWindow()">
+</form>
+
+<form method="post" name="background">
+    <input type="button" value="Żółty" onclick="changeBackground('#FFFF00')">
+    <input type="button" value="Czarny" onclick="changeBackground('#000000')">
+    <input type="button" value="Biały" onclick="changeBackground('#FFFFFF')">
+    <input type="button" value="Zielony" onclick="changeBackground('#00FF00')">
+    <input type="button" value="Niebieski" onclick="changeBackground('#0000FF')">
+    <input type="button" value="Pomarańczowy" onclick="changeBackground('#FF8000')">
+    <input type="button" value="Szary" onclick="changeBackground('#C0C0C0')">
+    <input type="button" value="Czerwony" onclick="changeBackground('#FF0000')">
+</form>
+
+<h2>Przelicznik wysokości</h2>
+
+<form name="converter">
+    <label>Enter Amount:</label>
+    <input type="text" name="input" value="0" oninput="convert(this.form, this.form.to, this.form.from)">
+    <br><br>
+
+    <label>From:</label>
+    <select name="to">
+        <option value="3.2808399">metry</option>
+        <option value="1">stopy</option>
+    </select>
+
+    <label>To:</label>
+    <select name="from">
+        <option value="1">stopy</option>
+        <option value="3.2808399">metry</option>
+    </select>
+    <br><br>
+
+    <label>Converted Amount:</label>
+    <input type="text" name="display" value="0" readonly>
+    <br><br>
+    <button type="button" onclick="clear(this.form)">Clear</button>
+</form>
+
+<table>
+    <tr><td><a href="../index.php"><b>Powrót</b></a></td></tr>
+</table>
