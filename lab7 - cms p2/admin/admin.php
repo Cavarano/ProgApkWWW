@@ -8,9 +8,9 @@ error_reporting(E_ALL ^ E_NOTICE ^ E_WARNING);
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
     <meta http-equiv="Content-Language" content="pl" />
-    <meta name="Author" content="Sebastian Minkowski" />
+    <meta name="Author" content="Maciej Kała" />
     <title>Admin Page</title>
-    <link rel="stylesheet" href="../css/style_admin.css"/>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>

@@ -37,19 +37,19 @@ $moja_strona='';
 if($_GET['idp'] == '')
 {echo PokazPodstrone(1);}
 if($_GET['idp'] == 'lab1_burdzchalifa')
-{echo PokazPodstrone(2);}
-if($_GET['idp'] == 'lab1_merdeka')
-{echo PokazPodstrone(3);}
-if($_GET['idp'] == 'lab1_shanghaitower')
-{echo PokazPodstrone(4);}
-if($_GET['idp'] == 'lab1_abradzalbajt')
 {echo PokazPodstrone(5);}
-if($_GET['idp'] == 'lab1_pinganfinancecenter')
+if($_GET['idp'] == 'lab1_merdeka')
 {echo PokazPodstrone(6);}
-if($_GET['idp'] == 'filmy')
-{echo PokazPodstrone(7);}
-if($_GET['idp'] == 'polygon')
+if($_GET['idp'] == 'lab1_shanghaitower')
 {echo PokazPodstrone(8);}
+if($_GET['idp'] == 'lab1_abradzalbajt')
+{echo PokazPodstrone(4);}
+if($_GET['idp'] == 'lab1_pinganfinancecenter')
+{echo PokazPodstrone(7);}
+if($_GET['idp'] == 'filmy')
+{echo PokazPodstrone(2);}
+if($_GET['idp'] == 'polygon')
+{echo PokazPodstrone(9);}
 ?>
 
 
