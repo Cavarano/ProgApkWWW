@@ -1,0 +1,59 @@
+body {
+    font-family: Georgia, serif;
+    background: #293649;
+    color: #cccccc;
+}
+
+h1 {
+    color: #fde996;
+}
+
+
+
+table {
+    width: 100%;
+    background-color: rgba(52, 76, 99, 0.93);
+    color: #fcfde1;
+    border: 2px double #141c33;
+    text-align: center;
+
+}
+
+a {
+    color: #fff7c4;
+}
+
+div {
+    width: auto;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(64, 88, 117, 0.87);
+}
+
+td {
+    padding: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #496baf; /* Przykładowy kolor przycisku */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #2a367a; /* Przykładowy kolor przycisku po najechaniu */
+}
+
